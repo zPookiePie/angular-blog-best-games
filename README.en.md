@@ -29,4 +29,4 @@ An interactive blog about the best pixel art games! This project was developed u
 ### View the original project’s source code:
 - <a href="https://github.com/felipeAguiarCode/angular-blog">**`GitHub Repository`**</a>
 #
-![BestGamesInPixelArt](https://github.com/user-attachments/assets/4eaf8e76-f48f-4b62-b172-1203ac07275b)
+![bestGamesInPixelArt](https://github.com/user-attachments/assets/f2f54bc8-775e-4540-8850-9f6ba248fcb1)
