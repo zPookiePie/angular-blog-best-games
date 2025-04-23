@@ -29,4 +29,7 @@ Um blog interativo sobre os melhores jogos em pixel art! Este projeto foi desenv
 ### Veja o código fonte do projeto original:
 - <a href="https://github.com/felipeAguiarCode/angular-blog">**`Repositório GitHub`**</a>
 #
-![BestGamesInPixelArt](https://github.com/user-attachments/assets/4eaf8e76-f48f-4b62-b172-1203ac07275b)
+![bestGamesInPixelArt](https://github.com/user-attachments/assets/0eb5b290-94bb-4eb4-b366-ef9ca0ff24b7)
+
+
+
