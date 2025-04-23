@@ -1,38 +1,35 @@
 <app-menu-title></app-menu-title>
 
-<div class="container__articles">
-  <div class="articles__main">
+<section class="articles">
+    <article class="article-main">
+        <app-big-card 
+            Id="1"
+            cardPhoto="https://files.backbon3.com/cdn-cgi/image/width=648,height=364,fit=scale-down/content/originals/cb8bd306-8dad-4954-bba5-b56e36dc9df6.jpg"
+            cardTitle="Guardian Tales"
+            cardDescription="A link to the past! Relive your greatest adventures with Guardian Tales! From solving challenging puzzles in epic dungeons to strategic action combat, embark on this legendary journey to save the world of Kanterbury!"
+            ></app-big-card>
+    </article>
+    <article class="article-normal">
+        <app-small-card 
+            Id="2"
+            cardPhoto="https://nerdyknitsyarn.com/cdn/shop/collections/Little-Witch-in-the-Woods-Art.webp?v=1665431099"
+            cardTitle="Little Witch in the Woods"
+            cardDescription="Little Witch in the Woods tells the story of Ellie, an apprentice witch. Explore the mystical forest, help the charming residents, and experience the daily life of the witch."
+        ></app-small-card>
 
-    <app-big-card
-      Id="1"
-      photoCover="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7F51FA9F6CBD9F0C9B1394B1CC0A6A842D07091318674E234CD33CBF7C28CDC3/scale?width=1200&aspectRatio=1.78&format=jpeg"
-      cardTitle="NOVO HOMEM DE FERRO EM 3D"
-      cardDescription="Marvel Anuncia novo homem de ferro"
-      >
-    </app-big-card>
+        <app-small-card 
+            Id="3"
+            cardPhoto="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg?t=1711128146"
+            cardTitle="Stardew Valley"
+            cardDescription="You've inherited your grandfather's old farm plot in Stardew Valley.
+            Armed with hand-me-down tools and a few coins, you set out to begin your new life!"
+        ></app-small-card>
 
-  </div>
-  <div class="articles__others">
-    <app-small-card
-      Id="2"
-      cardTitle="Nova Série anunciada no Disney +"
-      photoCover="https://disneyplusbrasil.com.br/wp-content/uploads/2021/07/Series-Marvel-Disney-Plus-1024x576.jpg"
-    >
-    </app-small-card>
-
-    <app-small-card
-      Id="3"
-      cardTitle="Novo filme do pantera negra lançado em breve"
-      photoCover="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/35720ACD323F927C3A83D809D0F460BD3651740DA519BCC184B6F042057EA14D/scale?width=1200&aspectRatio=1.78&format=jpeg"
-    >
-    </app-small-card
-    >
-
-    <app-small-card
-      Id="4"
-      cardTitle="Novo filme dos X-men está em pós produção, afirma diretor"
-      photoCover="https://midias.correiobraziliense.com.br/_midias/jpg/2022/07/22/675x450/1_xmen-26096415.jpeg?20220722171339?20220722171339"
-    >
-    </app-small-card>
-  </div>
-</div>
+        <app-small-card 
+            Id="4"
+            cardPhoto="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1093910/capsule_616x353.jpg?t=1628498556"
+            cardTitle="Tales of the Black Forest"
+            cardDescription="In a world filled with yōkai, a surging dark power has overshadowed a Japanese town. A group of 2 developers have produced a Japanese pixel adventure game to tell a tale that dates back to the Heisei era...In the name of dreams and passion."
+        ></app-small-card>
+    </article>
+</section>

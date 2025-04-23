@@ -1,5 +1,8 @@
-header {
-  margin-top: 15px;
-  display: flex;
+.header {
+  width: 100%;
   justify-content: center;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  background-color: transparent;
 }

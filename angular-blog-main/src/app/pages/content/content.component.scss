@@ -1,0 +1,250 @@
+* {
+  background-color:#ffffff;
+  color: purple;
+}
+
+.container {
+  width: 100%;
+
+  & > div {
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .container-content {
+      width: 100%;
+
+      .game-article {
+          display: flex;
+          flex-direction: row;
+          max-width: 1400px;
+          box-sizing: border-box;
+          padding: 110px 40px;
+          justify-self: center;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          
+          @media (max-width: 810px) {
+              flex-direction: column;
+          }
+          
+
+          @media (max-width: 500px) {
+              padding: 40px 20px;
+          }
+      }
+
+      article {
+
+          .game-photo {
+              margin: auto;
+              display: block;
+          }
+
+          .gameplay-photo {
+              width: 720px;
+              height: auto;
+
+              @media only screen and (max-width: 1370px) {
+                  width: 640px;
+              }
+
+              @media (max-width: 1120px) {
+                  width: 50%;
+              }
+
+              @media (max-width: 810px) {
+                  width: 100%;
+              }
+          }
+
+      // Classes de tamanho
+      .guardian-image-size {
+          width: 620px;
+          height: auto;
+
+          @media only screen and (max-width: 1370px) {
+              width: 500px;
+          }
+      }
+
+      .little-image-size {
+          width: 660px;
+          height: auto;
+
+          @media only screen and (max-width: 1370px) {
+              width: 540px;
+          }
+      }
+
+      .stardew-image-size {
+          width: 700px;
+          height: auto;
+
+          @media only screen and (max-width: 1370px) {
+              width: 500px;
+          }
+      }
+
+      .tales-image-size {
+          width: 500px;
+          height: auto;
+
+          @media only screen and (max-width: 1370px) {
+              width: 450px;
+          }
+      }
+
+      .guardian-image-size, .little-image-size, .stardew-image-size, .tales-image-size {
+          @media (max-width: 810px) {
+              max-width: 100%;
+          }
+      }
+
+      .game-content {
+          background-color: transparent;
+
+          p {
+              font-size: 28px;
+              line-height: 1.2;
+              background-color: transparent;
+
+              @media (max-width: 1370px) {
+                  font-size: 25px;
+              }
+
+              @media (max-width: 990px) {
+                  font-size: 22px;
+                  line-height: 1.1;
+              }            
+          }
+
+          h1 {
+              font-size: 65px;
+              padding-bottom: 20px;
+              background-color: transparent;
+                  
+              @media (max-width: 1370px) {
+                  font-size: 55px;
+              }
+
+              @media (max-width: 990px) {
+                  font-size: 45px;
+              }
+          }
+              
+          &:nth-child(2) {
+              padding-left: 55px;
+
+              @media (max-width: 1370px) {
+                  padding-left: 30px;
+              }
+
+              @media (max-width: 1120px) {
+                  width: 50%;
+                  padding: 0;
+              }
+
+              @media (max-width: 810px) {
+                  width: 100%;
+              }
+          }
+
+          @media (min-width: 1371px) {
+              max-width: 600px;
+          }
+
+          @media (max-width: 1370px) {
+              max-width: 550px;
+          }
+
+          @media (max-width: 810px) {
+              max-width: 100%;
+          }
+      }
+  }
+  }
+
+  .content {
+      width: 100%;
+      text-align: center;
+  }
+
+  .content > p {
+      font-size: 90px;
+      font-family: "Pixelify Sans", sans-serif;
+      margin: auto;
+      background-color: transparent;
+      color: white;
+      text-align: center;
+      margin: 0 20px;
+      padding: 80px 0;
+
+      @media (max-width: 990px) {
+          font-size: 80px;
+      }
+
+      @media (max-width: 810px) {
+          font-size: 65px;
+          padding: 70px 0;
+      }
+
+      @media (max-width: 500px) {
+          font-size: 50px;
+      }
+  }
+
+  .download-now {
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+
+      div {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          background-color: transparent;
+          padding: 100px 0 50px 0;
+          margin: 10px 0;
+      }
+      h1 {
+          color: #ffffff;
+          background-color: transparent;
+          font-size: 60px;
+
+          @media (max-width: 990px) {
+              font-size: 50px;
+          }
+
+          @media (max-width: 500px) {
+              font-size: 40px;
+          }
+      }
+
+      p, a {
+          color: #ffffff;
+          background-color: transparent;
+          font-size: 38px;
+
+          @media (max-width: 990px) {
+              font-size: 30px;
+          }
+
+          @media (max-width: 500px) {
+              font-size: 25px;
+          }
+      }
+
+      img {
+          background-color: transparent;
+          width: 100%;
+          height: auto;
+      }
+  }
+}

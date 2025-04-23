@@ -1,15 +1,39 @@
-<div class="container__content">
-  <div class="content__cover">
-    <img src="{{ photoCover }}" alt="" srcset="">
-  </div>
-  <div class="content__title">
-    <h1>{{ contentTitle }}</h1>
-    <hr />
-  </div>
-  <div class="content__description">
-    <a [routerLink]="['']"> << VOLTAR </a>
-    <p>
-      {{ contentDescription }}
-    </p>
-  </div>
+<div class="container">
+  <div [style.backgroundImage]="'url(' + gamePhoto + ')'" class="background-div"></div>
+
+  <section class="container-content">
+
+      <article class="game-article">
+          <div class="game-content">
+              <h1 [style.color]="textColor"> Welcome to {{gameName}}</h1>
+              <p [style.color]="textColor">{{gameDescription}}</p>
+          </div>
+          <img src="{{gameSmallPhoto}}" alt="game photo" class="game-photo" [ngClass]="imageSizeClass">
+      </article>
+
+      <article [style.backgroundColor]="bgColor" class="content">
+          <p>A NEW STYLE OF A CLASSIC <br> ADVENTURE</p>
+      </article>
+
+      <article class="game-article">
+          <img src="{{gamePlayPhoto}}" alt="game play photo" class="gameplay-photo">
+          <div class="game-content">
+              <h1 [style.color]="textColor">Gameplay</h1>
+              <p [style.color]="textColor">{{gamePlayDescription}}</p>
+          </div>
+      </article>
+
+      <article 
+          [style.background]="
+          'linear-gradient(to bottom, ' + bgColor + ' 0%, ' + bgColor + ' 40%, ' + gradientColor + ' 100%)'
+          " 
+          class="download-now">
+          <div>
+              <h1>Did you like it? Download it now!</h1>
+              <p>Click <a href={{linkForDownload}} target="_blank">here</a> to download the game</p>
+          </div>
+          <img src="{{finalImage}}" alt="Imagem do {{gameName}}">
+      </article>
+
+  </section>
 </div>

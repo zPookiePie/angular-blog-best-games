@@ -1,16 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {dataFake} from '../../data/dataFake'
+import {gameData} from '../../data/gameData'
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-  photoCover:string = ""
-  contentTitle:string = ""
-  contentDescription:string = ""
+  gamePhoto:string = ""
+  gameName:string = ""
+  gameDescription:string = ""
+  gameSmallPhoto:string = ""
+  gamePlayDescription:string = ""
+  gamePlayPhoto:string = ""
+  textColor:string = ""
+  bgColor:string = ""
+  gradientColor:string = ""
+  imageSizeClass:string = ""
+  finalImage:string = ""
+  linkForDownload:string = ""
+
   private id:string | null = "0"
 
   constructor(
@@ -26,11 +36,20 @@ export class ContentComponent implements OnInit {
   }
 
   setValuesToComponent(id:string | null){
-    const result = dataFake.filter(article => article.id == id)[0]
+    const result = gameData.filter(article => article.id == id)[0]
 
-    this.contentTitle = result.title
-    this.contentDescription = result.description
-    this.photoCover = result.photoCover
+    this.gamePhoto = result.gamePhoto
+    this.gameName = result.gameName
+    this.gameDescription = result.gameDescription
+    this.gameSmallPhoto = result.gameSmallPhoto
+    this.gamePlayDescription = result.gamePlayDescription
+    this.gamePlayPhoto = result.gamePlayPhoto
+    this.textColor = result.textColor
+    this.bgColor = result.bgColor
+    this.finalImage = result.finalImage
+    this.imageSizeClass = result.imageSizeClass
+    this.gradientColor = result.gradientColor
+    this.linkForDownload = result.linkForDownload
   }
 
 }

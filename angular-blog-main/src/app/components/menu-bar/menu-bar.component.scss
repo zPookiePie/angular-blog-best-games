@@ -1,0 +1,33 @@
+.container-menu-bar {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  align-content: center;
+
+  ul {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      background-color: transparent;
+      
+      li {
+          list-style: none;
+          background-color: transparent;
+
+          a {
+              text-decoration: none;
+              background-color: transparent;
+              transition: color 1s ease;
+
+              &:hover {
+                  color: #8286cf;
+              }
+          }
+
+          span {
+              font-size: 25px;
+              background-color: transparent;
+          }
+      }
+  }
+}

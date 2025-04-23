@@ -1,0 +1,54 @@
+.container-small-card {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  
+  &:hover {
+      img {
+          transform: scale(1.1);
+      }
+  }
+
+  .photo {
+      width: 190px;
+      height: 150px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease-in-out;
+      }
+  }
+
+  .content {
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      width: 100%;
+      padding: 0 10px;
+
+      .title h1 {
+          font-family: "Pixelify Sans", sans-serif;
+          font-weight: 400;
+          margin-bottom: 10px;
+          
+          @media (max-width: 502px) {
+              font-size: 20px;
+          }
+      }
+
+      .description p {
+          color: #8e92e2;
+
+          @media (max-width: 502px) {
+              font-size: 15px;
+          }
+      }
+  }
+}
