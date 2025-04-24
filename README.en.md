@@ -7,7 +7,7 @@
   </a>
 </p>
 
-# 🎮 PixelArt Games Blog
+# 🎮 Best Games In Pixel Art
 An interactive blog about the best pixel art games! This project was developed using Angular and was inspired by the project taught during the Decola Tech 2025 bootcamp by <a href="https://web.dio.me/home">DIO</a>. It was also one of the challenges proposed during the bootcamp. The blog showcases amazing games with a refined pixel art style, offering an informative and responsive experience for pixel game enthusiasts. 🕹️✨
 
 ## 📌 Main Features:
